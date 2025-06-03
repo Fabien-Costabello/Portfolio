@@ -1,6 +1,6 @@
 # 🧑‍💻 Mon Portfolio / Projet React + Tailwind
 
-Ce projet est une interface web réalisée avec **Vite**, **React** et **Tailwind CSS**. Il présente [tes compétences / ton portfolio / une démo technique], avec un design responsive et moderne.
+Ce projet est une interface web réalisée avec **Vite**, **React** et **Tailwind CSS**. 
 
 ---
 
