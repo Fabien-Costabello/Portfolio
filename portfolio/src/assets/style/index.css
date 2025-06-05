@@ -3,3 +3,12 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+@theme {
+  --color-bgSection: #161719;
+  --color-bgArticle: #181b22;
+  --color-theme: #cfaa7a;
+
+
+}

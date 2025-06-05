@@ -8,10 +8,12 @@ import Footer from "../partials/Footer";
 export default function Home() {
   return (
     <>
+    <main className="bg-bgSection">
       <HeroSection />
       <AboutMeSection />
       <ProjectsSection />
       <ContactSection />
+      </main>
     </>
   );
 }
