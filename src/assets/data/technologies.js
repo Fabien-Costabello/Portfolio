@@ -151,4 +151,13 @@ export const techs = [
     label: "Prisma",
     stack: "outil",
   },
+    {
+    src: "/graphql.svg",
+    alt: "graphql",
+    className: "",
+    htmlFor: "graphql",
+    label: "GraphQl",
+    stack: "back",
+  },
+
 ];

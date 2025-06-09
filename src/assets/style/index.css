@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@theme {
+  --color-bgSection: #161719;
+  --color-bgArticle: #181b22;
+  --color-theme: #cfaa7a;
+
+
+}
+
+/* Cacher les scrollbars, mais garder le scroll fonctionnel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE / Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+
+
+

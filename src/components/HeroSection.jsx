@@ -2,14 +2,14 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function HeroSection() {
   return (
-    <section className="bg-bgSection pt-40 pb-40">
-      <article className=" flex justify-around w-260  m-auto items-center">
-        <div className="border border-theme bg-bgArticle gap-5 rounded-3xl p-5 w-100 flex-col flex">
+    <section  data-aos="fade-up" className="bg-bgSection pt-40 pb-40">
+      <article className=" flex flex-col  justify-center w-auto m-auto items-center gap-20 md:flex md:flex-row  ">
+        <div className="border border-theme bg-bgArticle gap-5 rounded-3xl p-5 w-auto flex-col flex md:w-120">
           <h1 className="font-bold text-3xl text-theme">Fabien Costabello</h1>
           <h2 className="text-white font-bold text-xl">
             Développeur Full Stack
           </h2>
-          <p className="text-white">
+          <p className="text-white ">
             Développeur passionné par les nouvelles technologies, j’évolue dans
             cet univers depuis plusieurs années.Autonome, motivé et adaptable,
             je suis capable de m’approprier rapidement vos outils, frameworks ou
@@ -40,13 +40,14 @@ export default function HeroSection() {
           </div>
         </div>
 
-      <div className="flex items-center   justify-center border border-theme rounded-full p-5 w-[22rem] h-[22rem]">
+  <div className="flex items-center justify-center border border-theme rounded-full p-5">
   <img
     src="/avatar.png"
-    alt=""
-    className="rounded-full w-80 h-80 border-theme"
+    alt="image de profil"
+    className="rounded-full w-66 h-66 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 border-theme object-cover"
   />
 </div>
+
 
       </article>
     </section>

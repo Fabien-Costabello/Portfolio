@@ -43,19 +43,19 @@ export default function Technologies() {
 
   return (
     <>
-      <article className="w-[30%] m-auto   bg-bgArticle border border-theme rounded-3xl flex flex-col gap-4 pt-3 pb-6">
-        <h3 className="text-center  font-bold text-xl">FrontEnd</h3>
-        <div className="grid grid-cols-5 gap-6 ">{technosFront}</div>
+      <article data-aos="fade-up" className="w-auto m-auto   p-10 bg-bgArticle border border-theme rounded-3xl flex flex-col gap-4 pt-3 pb-6">
+        <h3 className="text-center  font-bold text-xl pb-5">FrontEnd</h3>
+        <div className="grid grid-cols-3 gap-5  md:grid-cols-6 md:gap-15">{technosFront}</div>
       </article>
 
-      <article className="w-[30%] m-auto   bg-bgArticle border border-theme rounded-3xl flex flex-col gap-4 pt-3 pb-6">
+      <article data-aos="fade-up" className="w-auto m-auto p-10  bg-bgArticle border border-theme rounded-3xl flex flex-col gap-4 pt-3 pb-6">
         <h3 className="text-center  font-bold  text-xl">BackEnd</h3>
-        <div className="grid grid-cols-5 gap-6">{technosBack}</div>
+        <div className="grid grid-cols-3 gap-5  md:grid-cols-6 md:gap-15">{technosBack}</div>
       </article>
 
-       <article className="m-auto w-[30%]  bg-bgArticle border border-theme rounded-3xl flex flex-col gap-4 pt-3 pb-6">
+       <article data-aos="fade-up" className="w-auto  m-auto p-10 bg-bgArticle border border-theme rounded-3xl flex flex-col gap-4 pt-3 pb-6">
         <h3 className="text-center  font-bold  text-xl">Outils</h3>
-        <div className="grid grid-cols-5 gap-6">{technosTools}</div>
+        <div className="grid grid-cols-3  md:grid-cols-6 gap-5 md:gap-15">{technosTools}</div>
       </article>
     </>
   );
