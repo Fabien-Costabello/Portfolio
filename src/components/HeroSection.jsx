@@ -11,7 +11,7 @@ export default function HeroSection() {
           </h2>
           <p className="text-white ">
             Développeur passionné par les nouvelles technologies, j’évolue dans
-            cet univers depuis plusieurs années.Autonome, motivé et adaptable,
+            cet univers depuis plusieurs années. Autonome, motivé et adaptable,
             je suis capable de m’approprier rapidement vos outils, frameworks ou
             librairies.
             <br /> <br />
