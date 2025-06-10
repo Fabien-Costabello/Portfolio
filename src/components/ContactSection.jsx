@@ -1,8 +1,16 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Bounce, ToastContainer, toast } from "react-toastify";
 
 export default function ContactSection() {
   const form = useRef();
+  const notify = () => toast("Message envoyé !",{ style: {
+    background: '#059669', // Tailwind green-600
+    color: 'white',
+    fontWeight: 'bold'
+  }})
+    
+  
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -16,7 +24,9 @@ export default function ContactSection() {
       )
       .then(
         () => {
-          alert("Message envoyé !");
+          notify();
+          console.log("test");
+
           form.current.reset();
         },
         (error) => {
@@ -39,13 +49,15 @@ export default function ContactSection() {
       </div>
 
       <form
-      data-aos="fade-up"
+        data-aos="fade-up"
         ref={form}
         onSubmit={sendEmail}
         className="flex flex-col  md:w-[40%] bg-gray-900 m-auto p-6 space-y-6 shadow-lg rounded-xl border border-theme"
       >
         <div className="flex flex-col gap-0.5 text-black">
-          <label htmlFor="email" className="text-white">Email</label>
+          <label htmlFor="email" className="text-white">
+            Email
+          </label>
           <input
             type="text"
             id="email"
@@ -56,7 +68,9 @@ export default function ContactSection() {
         </div>
 
         <div className="flex flex-col gap-0.5 text-black">
-          <label htmlFor="name" className="text-white">Nom</label>
+          <label htmlFor="name" className="text-white">
+            Nom
+          </label>
           <input
             type="text"
             id="name"
@@ -67,7 +81,9 @@ export default function ContactSection() {
         </div>
 
         <div className="flex flex-col gap-0.5 text-black">
-          <label htmlFor="content"  className="text-white">Message</label>
+          <label htmlFor="content" className="text-white">
+            Message
+          </label>
           <textarea
             name="message"
             id="message"
@@ -85,6 +101,19 @@ export default function ContactSection() {
           Envoyer
         </button>
       </form>
+<ToastContainer
+position="top-center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick={false}
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="colored"
+transition={Bounce}
+/>
     </section>
   );
 }
