@@ -44,35 +44,35 @@ export default function ContactSection() {
         onSubmit={sendEmail}
         className="flex flex-col  md:w-[40%] bg-gray-900 m-auto p-6 space-y-6 shadow-lg rounded-xl border border-theme"
       >
-        <div className="flex flex-col gap-0.5 text-white">
-          <label htmlFor="email">Email</label>
+        <div className="flex flex-col gap-0.5 text-black">
+          <label htmlFor="email" className="text-white">Email</label>
           <input
             type="text"
             id="email"
             name="email"
             placeholder="Entrez votre email"
-            className="rounded-lg  bg-gray-100 border border-gray-300 p-2.5"
+            className="rounded-lg  bg-gray-100 border border-gray-300 p-2.5 text-black"
           />
         </div>
 
-        <div className="flex flex-col gap-0.5 text-white">
-          <label htmlFor="name">Nom</label>
+        <div className="flex flex-col gap-0.5 text-black">
+          <label htmlFor="name" className="text-white">Nom</label>
           <input
             type="text"
             id="name"
             name="name"
             placeholder="Entrez votre nom"
-            className="rounded-lg bg-gray-100 border border-gray-300 p-2.5"
+            className="rounded-lg bg-gray-100 border text-black border-gray-300 p-2.5"
           />
         </div>
 
-        <div className="flex flex-col gap-0.5 text-white">
-          <label htmlFor="content">Message</label>
+        <div className="flex flex-col gap-0.5 text-black">
+          <label htmlFor="content"  className="text-white">Message</label>
           <textarea
             name="message"
             id="message"
             placeholder="Entrez votre message"
-            className="rounded-lg bg-gray-100 border border-gray-300 p-2.5"
+            className="rounded-lg bg-gray-100 border text-black border-gray-300 p-2.5"
             rows="5"
             cols="33"
           />
@@ -80,7 +80,7 @@ export default function ContactSection() {
 
         <button
           type="submit"
-          className="bg-theme hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-auto"
+          className="bg-theme hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full m-auto"
         >
           Envoyer
         </button>
