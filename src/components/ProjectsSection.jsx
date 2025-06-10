@@ -9,7 +9,7 @@ export default function ProjectsSection(){
   
 
   const porjectsList = projects.map((el)=>{
-  return  <ProjectCard title={el.title} image={el.image} description={el.description} techno={el.techno}/>
+  return  <ProjectCard title={el.title} image={el.image} description={el.description} techno={el.techno} link={el.link}/>
     
   })
 

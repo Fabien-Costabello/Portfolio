@@ -158,6 +158,13 @@ export const techs = [
     htmlFor: "graphql",
     label: "GraphQl",
     stack: "back",
+  }, {
+    src: "/linux.svg",
+    alt: "linux",
+    className: "",
+    htmlFor: "linux",
+    label: "Linux",
+    stack: "outil",
   },
 
 ];

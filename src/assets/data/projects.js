@@ -17,7 +17,7 @@ export const projects = [
               soupçon de chance, tout en étant une bonne démonstration des
               fondamentaux du JavaScript (manipulation du DOM, conditions,
               gestion d’état…).`,
-    link: "/cv",
+    link: "https://github.com/Fabien-Costabello/Pig-game",
     techno: ["/JavaScript.svg", "/HTML5.svg", "CSS3.svg"],
   },
   {
@@ -25,7 +25,7 @@ export const projects = [
     image: "/conway.png",
     description: `Ce projet a été développé dans le cadre de ma formation afin d’explorer les concepts fondamentaux du JavaScript, notamment la manipulation du DOM, les événements utilisateurs et la logique algorithmique. <br/> <br/> Le Jeu de la vie, conçu par le mathématicien John Conway, est une simulation de cellules autonomes évoluant sur une grille selon des règles simples mais puissantes.
 Chaque cellule peut être vivante ou morte, et son état change à chaque "génération" en fonction du nombre de voisines vivantes. <br/><br/>Le joueur peut activer ou désactiver manuellement des cellules, lancer une simulation automatique ou remplir la grille de manière aléatoire. Ce projet m’a permis de mettre en pratique des notions clés telles que la gestion d’état, les boucles imbriquées, et la mise à jour dynamique d’une interface web.`,
-    link: "/",
+    link: "https://github.com/Fabien-Costabello/Jeu-de-la-vie-",
     techno: ["/JavaScript.svg", "/HTML5.svg", "CSS3.svg"],
   },
   {
@@ -53,7 +53,7 @@ Chaque cellule peut être vivante ou morte, et son état change à chaque "gén�
 <br/> Créer et gérer des ateliers directement depuis l’interface
 
 <br/> <br/> Ce projet m’a permis de mobiliser l’ensemble des compétences acquises au cours de ma formation, notamment en développement full-stack, en conception d’interfaces accessibles, et en gestion de base de données. Il illustre ma capacité à répondre à des besoins réels avec une solution web complète, moderne et fonctionnelle.`,
-    link: "/",
+    link: "",
     techno: ["/JavaScript.svg", "/HTML5.svg", "CSS3.svg","Tailwind CSS.svg","prisma.svg","Node.js.svg","vite.svg","React.svg","graphql.svg"],
   },
 ];

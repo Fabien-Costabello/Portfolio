@@ -9,24 +9,25 @@ export default function ProjectCard({
   techno,
 }) {
   const [isOpen, setIsOpen] = useState(false);
-  const modalRef = useRef();
-    const sectionRef = useRef(null);
 
+  const sectionRef = useRef(null);
 
   // Empêche le scroll du body quand la modal est ouverte
   useEffect(() => {
     // Empêche le scroll du body
     if (isOpen) {
       document.body.style.overflow = "hidden";
-            sectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
+      sectionRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
     } else {
       document.body.style.overflow = "";
     }
 
     // Fonction de fermeture si clic en dehors de la modale
     function handleClickOutside(event) {
-      if (modalRef.current && !modalRef.current.contains(event.target)) {
+      if (sectionRef.current && !sectionRef.current.contains(event.target)) {
         setIsOpen(false);
       }
     }
@@ -40,7 +41,6 @@ export default function ProjectCard({
     return () => {
       document.body.style.overflow = "";
       document.removeEventListener("mousedown", handleClickOutside);
-      
     };
   }, [isOpen]);
 
@@ -57,7 +57,6 @@ export default function ProjectCard({
       <article
         onClick={() => setIsOpen(true)}
         className=" cursor-pointer rounded-2xl flex flex-col pb-5 m-auto w-[80%]"
-        ref={sectionRef}
       >
         <img src={image} alt="" className="w-auto rounded-t-2xl" />
         <div className=" border-b border-l border-r rounded-b-2xl border-theme shadow-theme-2xl flex flex-col gap-5 p-5 ">
@@ -71,7 +70,7 @@ export default function ProjectCard({
       {isOpen && (
         <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50   ">
           <div
-            ref={modalRef}
+            ref={sectionRef}
             className="  flex flex-col  md:items-center md:gap-5 bg-bgArticle text-white p-8 rounded-2xl max-h-[90vh] w-full max-w-3xl overflow-y-auto relative border border-theme no-scrollbar"
           >
             <button
@@ -86,12 +85,27 @@ export default function ProjectCard({
             <div className="flex flex-wrap gap-4 justify-center pb-5">
               {technologiesDétail}
             </div>
-            <a
-              href="https://github.com/Fabien-Costabello/Jeu-de-la-vie-"
+
+
+{link  ? (
+
+<a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-40 text-center border border-theme text-white font-bold rounded-xl p-3 m-auto"
             >
               Github
-            </a>
+            </a> 
+  
+) : null}
+
+            
+
+
+
+
+
           </div>
         </div>
       )}
