@@ -45,7 +45,7 @@ export default function ProjectCard({
   }, [isOpen]);
 
   const technologies = techno?.map((el) => (
-    <img src={el} className="w-8 h-8"></img>
+    <img src={el} className="w-8 h-8" alt={`logo ${el}`}></img>
   ));
 
   const technologiesDétail = techno?.map((el) => (
