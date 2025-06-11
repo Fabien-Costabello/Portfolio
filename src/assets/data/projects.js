@@ -1,5 +1,32 @@
 export const projects = [
-  {
+   {
+    title: "Mission locale d'aubagne",
+    image: "/missionLocale.webp",
+    description: `Dans le cadre de mon projet de fin d’études, j’ai réalisé une refonte complète du site de la Mission Locale d’Aubagne (PACA).<br/> Ce nouveau site a été pensé pour améliorer l’expérience des jeunes adhérents ainsi que celle des conseillers, en apportant de véritables fonctionnalités métiers.
+
+<br/> <br/> Côté adhérent, l’utilisateur peut désormais :
+<br/>
+<br/> Créer et gérer son espace personnel
+
+<br/>  Prendre rendez-vous avec un conseiller (en suivi ou en urgence)
+
+<br/> S’inscrire à des ateliers
+
+<br/> Suivre les actualités de la Mission Locale
+<br/>
+<br/> Côté conseiller, la plateforme permet de :
+
+<br/>
+<br/> Gérer les adhérents et accéder à leurs informations et documents
+
+<br/> Publier des actualités
+
+<br/> Créer et gérer des ateliers directement depuis l’interface
+
+<br/> <br/> Ce projet m’a permis de mobiliser l’ensemble des compétences acquises au cours de ma formation, notamment en développement full-stack, en conception d’interfaces accessibles, et en gestion de base de données. Il illustre ma capacité à répondre à des besoins réels avec une solution web complète, moderne et fonctionnelle.`,
+    link: "",
+    techno: ["/JavaScript.svg", "/HTML5.svg", "CSS3.svg","Tailwind CSS.svg","prisma.svg","Node.js.svg","vite.svg","React.svg","graphql.svg"],
+  },{
     title: "Pig game",
     image: "/piggame.png",
     description: ` PigGame est un projet réalisé dans le cadre de ma formation,
@@ -28,32 +55,5 @@ Chaque cellule peut être vivante ou morte, et son état change à chaque "gén�
     link: "https://github.com/Fabien-Costabello/Jeu-de-la-vie-",
     techno: ["/JavaScript.svg", "/HTML5.svg", "CSS3.svg"],
   },
-  {
-    title: "Mission locale d'aubagne",
-    image: "/missionLocale.webp",
-    description: `Dans le cadre de mon projet de fin d’études, j’ai réalisé une refonte complète du site de la Mission Locale d’Aubagne.<br/> Ce nouveau site a été pensé pour améliorer l’expérience des jeunes adhérents ainsi que celle des conseillers, en apportant de véritables fonctionnalités métiers.
-
-<br/> <br/> Côté adhérent, l’utilisateur peut désormais :
-<br/>
-<br/> Créer et gérer son espace personnel
-
-<br/>  Prendre rendez-vous avec un conseiller (en suivi ou en urgence)
-
-<br/> S’inscrire à des ateliers
-
-<br/> Suivre les actualités de la Mission Locale
-<br/>
-<br/> Côté conseiller, la plateforme permet de :
-
-<br/>
-<br/> Gérer les adhérents et accéder à leurs informations et documents
-
-<br/> Publier des actualités
-
-<br/> Créer et gérer des ateliers directement depuis l’interface
-
-<br/> <br/> Ce projet m’a permis de mobiliser l’ensemble des compétences acquises au cours de ma formation, notamment en développement full-stack, en conception d’interfaces accessibles, et en gestion de base de données. Il illustre ma capacité à répondre à des besoins réels avec une solution web complète, moderne et fonctionnelle.`,
-    link: "",
-    techno: ["/JavaScript.svg", "/HTML5.svg", "CSS3.svg","Tailwind CSS.svg","prisma.svg","Node.js.svg","vite.svg","React.svg","graphql.svg"],
-  },
+ 
 ];

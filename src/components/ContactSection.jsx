@@ -43,7 +43,7 @@ export default function ContactSection() {
         </h2>
         <div className="mx-auto mt-2 h-1 w-[80%] rounded bg-gradient-to-r from-transparent via-theme to-transparent"></div>
         <p className="pt-4 pb-6 w-[80%] text-center m-auto text-white  ">
-          N'hésitez pas à me contacter via le formulaire ci-dessous ou sur LinkedIn/mail directement pour toute demande.
+          Contactez moi via le formulaire ci-dessous ou sur LinkedIn/mail directement pour toute demande.
         </p>
       </div>
 

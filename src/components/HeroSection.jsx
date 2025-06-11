@@ -11,13 +11,13 @@ export default function HeroSection() {
           </h2>
           <p className="text-white ">
             Développeur passionné par les nouvelles technologies, j’évolue dans
-            cet univers depuis plusieurs années. Autonome, motivé et adaptable,
+            cet univers depuis plusieurs années. Autonome, motivé et organisé,
             je suis capable de m’approprier rapidement vos outils, frameworks ou
             librairies.
             <br /> <br />
-            J’accorde une attention particulière à la qualité du code, à la
-            structuration des bases de données, à la performance des
-            applications ainsi qu’à l’expérience utilisateur (UX).
+            J’accorde une attention particulière à la qualité et la maintenabilité du code, à la
+            bonne conception des bases de données, à la performance des
+            applications ainsi qu’à l’expérience utilisateur.
           </p>
 
           <div className="flex  gap-4 p-2">
@@ -54,13 +54,3 @@ export default function HeroSection() {
   );
 }
 
-///Ancienne HeroSectio
-
-//  <section className="bg-[url('/heroImg.jpg')] bg-cover h-96 flex flex-col items-center justify-center ">
-//     <div>
-//       <p className="font-bold text-4xl text-center ">BONJOUR, JE SUIS FABIEN COSTABELLO</p>
-//       <p className="w-[70%] text-center	m-auto pt-3">
-//         Je suis un développeur passionné par les nouvelles technologies, baignant dans ce milieu depuis longtemps. Autonome, motivé et adaptable, je suis capatble de manier et de m'adapter à votre framework / librairie.
-//       </p>
-//     </div>
-//   </section>

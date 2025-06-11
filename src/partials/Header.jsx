@@ -5,6 +5,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    <header>
     <nav className="flex items-center justify-between bg-bgSection text-white border-b border-theme px-5 py-3 relative">
       <div className="flex items-center">
         <img src="/avatar.png" alt="" className="rounded-full w-12 h-12" />
@@ -31,7 +32,7 @@ export default function Header() {
           </a>
         </li>
         <li>
-          <a href="/cv.pdf" download>CV</a>
+          <a href="/cv.pdf" className="hover:underline" download >CV</a>
         </li>
         <li>
           <a href="#about" className="hover:underline">
@@ -50,5 +51,6 @@ export default function Header() {
         </li>
       </ul>
     </nav>
+    </header>
   );
 }

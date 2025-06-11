@@ -141,7 +141,7 @@ export const techs = [
     className: "",
     htmlFor: "vite",
     label: "Vite",
-    stack: "outil",
+    stack: "front",
   },
   {
     src: "/prisma.svg",
@@ -149,7 +149,7 @@ export const techs = [
     className: "",
     htmlFor: "prisma",
     label: "Prisma",
-    stack: "outil",
+    stack: "back",
   },
     {
     src: "/graphql.svg",
