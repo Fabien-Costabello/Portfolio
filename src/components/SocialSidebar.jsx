@@ -2,7 +2,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function SocialSidebar() {
   return (
-    <div className="fixed top-1/3 left-0 flex flex-col gap-4 p-2 z-50">
+
+    <div className="hidden md:block">
+    <div className="fixed top-1/3 left-0 flex flex-col gap-4 p-2 z-50 ">
       <a
         href="https://github.com/Fabien-Costabello"
         target="_blank"
@@ -19,6 +21,7 @@ export default function SocialSidebar() {
       >
         <FaLinkedin size={24} />
       </a>
+    </div>
     </div>
   );
 }

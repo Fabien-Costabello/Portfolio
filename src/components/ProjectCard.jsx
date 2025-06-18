@@ -6,6 +6,7 @@ export default function ProjectCard({
   image,
   description,
   link,
+  onlineLink,
   techno,
 }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,25 +87,31 @@ export default function ProjectCard({
               {technologiesDétail}
             </div>
 
+            {link ? (
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-40 text-center border border-theme text-white font-bold rounded-xl p-3 m-auto"
+              >
+                Github
+              </a>
+            ) : (
+              <div className="w-40 text-center border border-theme text-white font-bold rounded-xl p-3 m-auto">
+                Github privé
+              </div>
+            )}
 
-{link  ? (
-
-<a
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-40 text-center border border-theme text-white font-bold rounded-xl p-3 m-auto"
-            >
-              Github
-            </a> 
-  
-) : null}
-
-            
-
-
-
-
+              {onlineLink ? (
+              <a
+                href={onlineLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-40 text-center border border-theme text-white font-bold rounded-xl p-3 m-auto"
+              >
+                En ligne
+              </a>
+            ) :null }
 
           </div>
         </div>
